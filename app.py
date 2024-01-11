@@ -11,7 +11,7 @@ from pydantic import BaseModel
 pred_model = load_model('your_model.h5')
 
 # Load the scaler (replace 'scaler.pkl' with the correct filename)
-with open('model.pkl', 'rb') as scaler_file:
+with open('scaler.pkl', 'rb') as scaler_file:
     scaler = pickle.load(scaler_file)
 
 # Create a FastAPI app
